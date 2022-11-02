@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        /* div {
+            background: blue;
+        }
+        span {
+            background: red;
+        } */
+
+        /* width,height 속성은 블록레벨의 요소에만 적용가능
+        인라인레벨에 적용은 되나, height 속성이 적용되지 않는다. */
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 100px;
+            background-color: coral;
+        }
+
+        .box3 {
+            width: 50%;
+            height: 100px;
+            background-color: rgb(134, 93, 230);
+        }
+
+        /* 레벨변경속성 */
+        /* display : inline | block | inline-block : 두 성질을 모두 쓸 수 있음 */
+
+        /* 인라인->블록 */
+        img {
+            display:block;
+        }
+        /* 블록->인라인 */
+        li {
+            display:inline-block;
+            width: 80px;
+            height: 15px;
+        }
+
+        /* div {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+        } */
+
+        /* 경계선 속성 */
+        /* border : 선의 굵기,선의 종류,선의 색깔 ; */
+        /* 둥근 사각형 */
+        /*border-radius : 값1 값2 값3 값4 */
+        /* 박스모델 그림자 속성 */
+        /* box-shadow : x좌표 y좌표 흐림정도 번짐정도 그림자색깔 */
+
+        div {
+            width: 200px;
+            height: auto;
+            background: orange;
+            margin: 15px;
+        }
+
+        .box4 {
+            width: 200px;
+            padding: 10px;
+            background-color: orange;
+            margin: 5px;
+            display: inline-block;
+            /* margin: 10px;
+            border: 1px solid orangered;
+            border-radius: 100px; /*100px 100px 100px 100px
+            box-shadow: 2px 2px 7px 10px black; */
+        }
+        .box5 {
+            width: 200px;
+            padding: 10px;
+            background-color: orange;
+            margin: 5px;
+            display: inline-block;
+            /* margin: 10px 30px;
+            border:3px double hotpink;
+            border-radius: 30px 50px; /*1,3  2,4
+            box-shadow: 2px 2px 7px 10px lemonchiffon;*/
+        } 
+        .box6 {
+            width: 200px;
+            padding: 10px;
+            background-color: orange;
+            margin: 5px;
+            display: inline-block;
+            /* margin: 10px 100px 50px; /*1  3  2,4 
+            border:5px dotted indigo;
+            border-radius: 30px 100px 50px ; /* 1  2,4  3
+            box-shadow: 2px 2px 7px 10px paleturquoise; */
+        }
+
+        /* 박스모델 크기 공식 */
+        /* w = content + 2 x (padding + border + margin) */
+        /* h = content + 2 x (padding + border + margin) */
+
+        #container {
+            /* 200+2(10+0+5) / 230*3=690  값 : 702부터 가로로 올라감*/
+            width: 702px;
+            background-color: aqua;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- CSS가 필요한 대표적인 단축 키들<br> -->
+    <!-- 
+    <p></p>
+    <span></span>
+    <img src="" alt="">
+    <div></div>
+    -->
+
+    <!-- 박스모델 -->
+    <!-- 1.블록레벨 : 행의 전체 크기 표현<br> -->
+    <!-- <p></p> , <h1></h1> , <ul></ul> , <ol></ol> , <table></table> -->
+    <div>블록레벨</div>
+
+    <!-- 2.인라인레벨 : 요소의 내용만큼만 크기를 표현<br> -->
+    <!-- <img> , <input> , <button></button> , <label></label> -->
+    <span>인라인레벨</span><span>인라인레벨</span>
+    
+    <!-- width,height 속성 적용예시 -->
+    <!-- <div class="box1">블록레벨</div>
+    <div class="box2">블록레벨</div>
+    <span class="box3">인라인레벨</span> -->
+
+    <!-- 레벨변경속성 적용예시 -->
+    <!-- 인라인->블록 -->
+    <!-- <img src="images/dollbook.jpg">
+    <img src="images/dollcc.jpg">
+    <img src="images/dollred.jpg"> -->
+
+    <!-- 블록->인라인 -->
+    <!-- <ul>
+        <li>메뉴 1</li>
+        <li>메뉴 2</li>
+        <li>메뉴 3</li>
+        <li>메뉴 4</li>
+        <li>메뉴 5</li>
+    </ul> -->
+
+    <!-- 경계선 속성 적용예시 -->
+    <div class="box4">패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</div>
+    <div class="box5">패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</div>
+    <div class="box6">패딩(padding)이란 콘텐츠 영역과 테두리 사이의 여백을 말합니다.</div>
+
+
+    <!-- 컨테이너 색상 적용예시 -->
+    <div id="container">
+        <div class="box4">4번 상자</div>
+        <div class="box5">5번 상자</div>
+        <div class="box6">6번 상자</div>
+
+    </div>
+
+</body>
+</html>
