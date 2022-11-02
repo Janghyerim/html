@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagelinkhyperlink</title>
+</head>
+<body>
+    <!-- HTML의 꽃 이미지 , 링크 넣어보기 -->
+    <!-- <img src="경로" /> -->
+    <!-- 절대경로 -->
+    <h1>절대경로</h1>
+    <img src="C:\work\htmlworkspace\sea.jpg" alt="바다"/>
+
+    <br>
+    <!-- 상대경로 -->
+    <h1>상대경로</h1>
+    <img src="sea.jpg" alt="바다"/>
+    <!-- 하위 -->
+    <img src="images/sea.jpg" height="150" width="150" alt="바다"/>  <!--더 하위에 있는 폴더 images를 붙여주면 출력 된다-->
+    <!-- 상위 c:work로 들어가서 만든거면 한번 더 ../해줘야 한다 -->
+    <img src="../../sea.jpg" height="200" width="200" alt="바다"/> 
+    <br>
+
+    <!-- url 사용하기(주소 복사) -->
+    <h1>url 사용하기</h1>
+    <img src="https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png"/>
+    <br><br>
+
+    <!-- 이미지내에 특정영역에 링크설정하기 -->
+    <img src="sea.jpg" alt="바다" usemap="#seaarea">
+    <map name="seaarea">
+        <area shape="rect" coords="173,138,251,201" href="http://www.naver.com" target="_blank" alt="바다">  <!--rect : 사각형-->
+        <!--  모양          좌표값                   링크                         타겟          이미지재생안될 시 문자열-->
+    </map>
+    <br><br>
+
+    <img src="loopy.jpg" alt="루피" usemap="#loopyarea">
+    <map name="loopyarea">
+        <area shape="rect" coords="544,337,1000,834" href="http://www.naver.com" target="_blank" alt="루피">
+    </map>  
+    <br><br>
+
+    <!-- 하이퍼링크 -->
+    <!-- <a href="파일위치(상대,절대),url">화면에 나타나는 부분</a> -->
+    <a href="http://www.naver.com">NAVER 바로가기</a>
+    <br><br>
+    <a href="tags.html" target="_self">tags.html</a> <!--target="_self" : 자기 사이트 자체가 변환-->
+    <br><br>
+    <a href="tags.html" target="_blank">tags.html</a> <!--target="_blank" : 또 다른 새창으로 변환-->
+    <br><br>
+    <a href="http://www.naver.com"> <img src="naver.gif" height="300" width="300"></a>
+    <br><br>
+
+    <!-- 한 페이지 내에서 문서 이동 -->
+    <a href="#content1">한줄평</a>
+    <a href="#content2">반품환불</a>
+    <a href="#content3">도서정보</a>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content1">한줄평 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content2">반품환불 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content3">도서정보 위치</a>
+
+    <a href="#top"><h3>맨 위로</h3></a>
+</body>
+</html>
