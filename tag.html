@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag</title>
+</head>
+<body>
+    <!--텍스트 관련 태그들 -->
+    제목 표시하기         <!--기본적으로 한줄처리함 줄바꾸기x-->
+    <h1>제목 표시하기</h1>  <!--줄바꾸기도해줌 -->
+    <h2>제목 표시하기</h2>
+    <h3>제목 표시하기</h3>
+    <h4>제목 표시하기</h4>
+    <h5>제목 표시하기</h5>
+    <h6>제목 표시하기</h6>  
+
+    안녕하세요<br>   <!-- <br> : 홑태그 / 줄바꾸기기능 -->   
+    저는 홍길동입니다<br>
+    사는 곳은 서울 입니다<br>
+
+     <hr> <!-- <hr> : 홑태그 / 왼쪽에서 오른쪽으로 선긋기 기능 -->
+
+    <p>첫번째 문단</p>   <!-- <p></p>는 문단과 문단 사이에 공백이 생김  -->
+    <p>두번째 문단</p>
+    <p>세번째 문단</p>
+
+    <pre>     <!-- <pre></pre> : vs code에 보이는 그대로 브라우저에 보여진다.-->
+     내가 그의 이름을 불러 주기 전에는
+     그는 다만 
+     하나의 몸짓에 지나지않았다.
+
+     내가 그의 이름을 불러 주었을 떄
+     그는 나에게로 와서
+     꽃이 되었다.
+    </pre>
+
+    <!-- &nbsp; : 1칸 띄어쓰기 기능 -->
+    홍&nbsp;&nbsp;&nbsp;길&nbsp;&nbsp;&nbsp;&nbsp;동          
+    <br><br>
+
+    <!-- <strong></strong> = <b></b> : 글자 강조 -->
+    <br><br>
+    글자강조<strong>글자강조</strong>       
+    <br><br>
+
+    <!-- <em></em> = <i></i> : 글자 기울임 -->
+    글자기울임<em>글자기울임</em>         
+    <br><br>
+    
+    <!-- <q></q> = " " 인용구문-->
+    <q>인용구문</q>                                            
+    <br><br>
+
+    <!-- <mark></mark> = 중요구문 마커 표시되어 출력 -->
+    <mark>중요구문</mark>                                      
+    <br><br>
+    
+    <!-- <span></span> : 일부 영역에 효과를 주는 기능 -->
+    <br><br>
+    
+    <!-- 목록을 표시하는 태그들 : ul , ol , dl -->    
+    <!-- 참고!! ul , ol 목록태그를 쓰려면 li링크태그가 무조건 따라와야 한다.-, dl-dt-dd->                           
+    <ul>
+        <li>JAVA</li>
+        <li>ORACLE</li>
+        <li>HTML</li>
+    </ul>
+
+    <hr>
+
+    <-- <ol> </ol>은 뒤에 타입을 정할수있음-->
+    <!-- ORDERLIST : 순서를 표기해주는 목차표기 기능  1,2,3... / 타입을 a로 바꾸면 영문 순서로 바뀜 a,b,c... -->
+    <ol type="a">                                   
+        <li>JAVA</li>
+        <li>ORACLE</li>
+        <li>HTML</li>
+    </ol>
+    <hr>
+
+    <ul>
+        <li>1일차
+            <ol type="a">
+                 <li>해녀 박물관</li>
+                <li>낚시 체험</li>
+            </ol>
+        </li>
+        <li>2일차
+            <ol>
+                <li>용눈이오름</li>
+                <li>만장굴</li>
+            </ol>
+        </li>
+      </ul>
+
+    <dl>
+        <dt>hello</dt>    <!-- 정의하고 싶은 단어 -->
+           <dd>              <!--단어의 설명-->
+            1.감탄사, 명사 (만났을 때의 인사로) 안녕(하세요), 인사, (전화에서나 남의 관심을 끌 때) 여보세요<br>
+            2.감탄사, 명사 英 이런, 어머나(놀라움을 나타냄)<br>
+            3.감탄사, 명사 비격식 얼씨구(상대방의 말이 바보 같거나, 상대방이 주의를 기울이지 않고 있다고 여길 때)<br>
+           </dd>
+    </dl>
+
+    <!-- table tag --> 
+    <!-- 게시판 만들 때 사용이 많이 된다 -->
+    <!-- 단위 : px(기본값), % -->
+    <!-- 제목 주는 방법 -->
+    <!-- <figcaption></figcaption> : 독립적인 콘텐츠를 정의할 때 사용 -->
+    <!-- <caption></caption> : 가운데 정렬 후 글자 강조하여 제목 출력 -->
+    <figure> 
+      <fricaption>
+        <p>국내 총 생산량</p>
+        </fricaption>     
+        <!-- border="1" :  보더 1이라는 값을 줘야 깔끔한 표 생성이 된다. -->
+        <table border="1px" height="500" width="500">  <!-- 1px (기본값), %-->  
+        <!-- <caption>                     
+            <strong>생산년도</strong>
+        </caption>-->
+        <tr>   <!-- <tr>은 행 , <td>는 열 <th>쓰면 가운데정렬 굵어짐-->
+            <td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td><td>7</td><td>8</td>
+        </tr>
+        <tr>
+            <td>9</td><td>10</td><td>11</td><td>12</td>
+        </tr>
+        <tr>
+            <td>13</td><td>14</td><td>15</td><td>16</td>
+        </tr>
+        </table>
+    </figure>
+
+    <!-- rowspan : 행 병합 / colspan : 열 병합  합쳐지면 데이터는 시작되는 데이터만 살아남음-->
+    <!-- 행열병합 예시 -->
+    <table border="1" height="350" width="350">
+        <caption><b>2행 3열 구조</b></caption>
+        <tr>
+            <td rowspan="2">1</td><td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+    </table>
+    <br><br>
+
+        
+    <!-- thead, tbody, tfoot 논리태그 -->
+    <!-- thead , tbody , tfoot : 아무런 기능을 하지 않으나 웹 접근성으로 표의 틀을 잡아줄 뿐이다. (티헤드,티바디,티풋) -->
+    <table border="1" height ="350" width = "350">
+        <caption><b>3행 2열 구조</b></caption>
+        <thead>
+            <tr>
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>3</td><td>4</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td>5</td><td>6</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
