@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position : static | relative | absolute | fixed */
+        /* top,left,right,bottom => position 적용 후 같이 써줘야 한다*/
+        /* <div></div>부모요소는 반드시 position 속성이 relative해야한다 */
+        /* 그 자식은 position 속성이 유연하게 absolute / relative 해도된다 */
+        /* 1 */
+        /* .box1 {
+            position: absolute;
+            top:20px;
+            left:20px;
+            float: left; 
+            width: 100px;
+            background: rgb(245, 245, 119);
+            margin-right: 10px;
+            padding: 20px;
+        }
+
+        .box2 {
+            position: absolute;
+            top:20px;
+            left:20px;
+            float: left;
+            width: 300px;
+            background-color: rgb(252, 116, 116);
+            padding: 20px;
+            
+        } */
+
+        /* 2 */
+        /* 부모 */
+        /* .wrap {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        /* 자식 */
+        /*.box {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: black;
+        }
+
+        #card1 {
+            top: 0;
+            left: 0;
+        }
+        #card2 {
+            top: 0;
+            right: 0;
+        }
+        #card3 {
+            bottom: 0;
+            left: 0;
+        }
+        #card4 {
+            bottom: 0;
+            right: 0;
+        }
+        #card5 {
+            top: 125px;
+            left: 125px;
+            숫자가 들어갈 경우 px을 꼭 써줘야 한다 
+        }
+        #card6 {
+           position: fixed;
+           top: 5px;
+           right: 5px;
+        } */
+
+        /* 3 */
+        /* 요소를 화면에 보이기/숨기기 속성 */
+        /* visibility : hidden | visible */
+        /* 요소의 영역은 그대로 보전한다 */
+        /* display : none;(숨길수 있으나 영역은 보전되지 않는다) / block;(보여질 수 있다) */
+        /* .invisible {
+            visibility: hidden;
+            display: none;
+        } */
+
+        /* 4 */
+        /* 요소를 화면에 겹치기 속성 */
+        img {
+            position: absolute;
+        }
+
+        .img0 {
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .img1 {
+            top: 30px;
+            left: 30px;
+            z-index: 100;
+        }
+        .img2 {
+            top: 60px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 4 -->
+    <img class="img0" src="images/dollbook.jpg">
+    <img class="img1" src="images/dollcc.jpg">
+    <img class="img2" src="images/dollred.jpg">
+
+    <!-- 3 -->
+    <!-- <img src="images/dollbook.jpg">
+    <img class="invisible" src="images/dollcc.jpg">
+    <img src="images/dollred.jpg"> -->
+
+    <!-- 2 -->
+    <!-- <div class="wrap">
+        <div class="box" id ="card1"></div>
+        <div class="box" id ="card2"></div>
+        <div class="box" id ="card3"></div>
+        <div class="box" id ="card4"></div>
+        <div class="box" id ="card5"></div>
+    </div>
+    <div class="box" id="card6"></div> -->
+    
+    <!-- 1 -->
+    <!-- <div class="box1">박스1</div>
+    <div class="box2">박스2</div> -->
+</body>
+</html>
