@@ -1,0 +1,44 @@
+.prod-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* 자식(.prod-list li img)이 float:left; 하면 부모(.prod-list li)도 float:left; 해야된다 */
+.prod-list li {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.prod-list li img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+}
+
+.prod-list .caption {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 10;
+    /* img z-index 값보다 큰 값이면 된다. */
+    transition: all 0.3s;
+}
+
+.prod-list li:hover .caption {
+    opacity: 1;
+    transform: translateY(-200px);
+    /* Y축은 위에서 아래로 -+라 -로 올라가게끔 -200px를 준것  */
+}
+
+.prod-list .caption h1, .prod-list .caption p {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecttag</title>
+    <style>
+        /* 1 */
+        /* 선택자 종류 */
+        /*
+        1.전체선택자   * {}
+        2.태그선택자   p {}
+        3.클래스선택자 .color {}
+        4.아이디선택자 #textsize {}
+        5.그룹선택자   h1,p {}
+        */
+
+        /* 연결선택자 */
+
+        /* 후손선택자 */
+        /* section ul{
+            border: 1px solid red;
+        } */
+
+        /* 자식선택자 */
+        /* section > p{
+            color: dodgerblue;
+        } */
+
+        /* 형제선택자 */
+        /* 바로 아래 동생 */
+        /* p + ul{
+            background-color: yellowgreen;
+        } */
+        
+        /* 동생들 */
+        /* p ~ ul{
+            color: darkred;
+        } */
+
+        /* 속성선택자 */
+        /* a태그중에 href 속성이 있는 애들의 백그라운드 컬러를 옐로우로 하자 */
+        /* a[href] {
+            background-color: yellow;
+        } */
+
+        /* a[target="_blank"] {
+            background-color: cornflowerblue;
+        } */
+
+        /* 2 */
+        /* a태그 종류*/
+        /*
+        1.link : 링크 밑선 없애는 기능
+        2.visited : 방문 하고나면 색상이 바뀌는 기능
+        3.hover : 마우스를 갖다대면 밑줄이 생김
+        4.active : 클릭을 하는동안에 색상이 변경됨
+        */
+
+        /* a:link{
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        a:active{
+            color: chartreuse;
+        }
+
+        a:visited{
+            color: lightcoral;
+        } */
+
+        /* 상태선택자 */
+        /* check된 쪽이 색상이 변경됨 */
+        /* input:checked + span {
+            color: orange;
+        } */
+
+        /* 구조선택자 */
+        /* display: inline; : 수평정렬 */
+        /* ul li{
+            float: left;
+            border: 2px solid #000;
+            list-style-type: none;
+            width: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        li:nth-child(2n+1){
+            background-color: red;
+        }
+
+        li:nth-child(2n){
+            background-color: rgb(124, 135, 235);
+        }
+
+        li:first-child {
+            border-radius: 20px 0 0 20px;
+        }
+
+        li:last-child {
+            border-radius: 0 20px 20px 0;
+        }
+
+        p:hover {
+            color: orchid;
+        } */
+
+       .top-img:hover {
+        width: 200px;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- 3 -->
+    <p>이미지 위로 마우스 포인터를 올려보세요.</p>
+    <div><img src="images/apple2.jpg" class="top-img" width="180" alt="사과"></div>
+    <br>
+    <div><img src="images/apple2.jpg" class="top-img" width="180" alt="사과"></div>
+    
+    <!-- <p>마우스가 올라옵니다.</p>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul> -->
+
+
+    <!-- 2 -->
+    <!-- <a href="https://www.naver.com/">네이버</a>
+    <br>
+    <a href="https://www.daum.net/">다음</a>
+    <br>
+    <a href="https://www.google.com/">구글</a>
+    <br> -->
+    <!-- 라디오버튼 -->
+    <!-- <input type="radio" name="hobby"><span>운동</span>
+    <input type="radio" name="hobby"><span>독서</span> -->
+
+
+    <!-- 1 -->
+    <!-- <section id="container">
+        <p>1번p</p>
+        <ul>
+            <li>직접통화</li>
+            <li>문자보내기</li>
+            <li>
+                <p>2번p</p>
+                <ul>
+                    <li>1인</li>
+                    <li>2인</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">HTML</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+    </section> -->
+</body>
+</html>
